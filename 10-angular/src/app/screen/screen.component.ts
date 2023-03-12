@@ -5,28 +5,18 @@ import {
   OnInit,
 } from '@angular/core';
 import { interval, scan, startWith, tap } from 'rxjs';
+import { CounterComponent } from '../counter/counter.component';
 
 @Component({
   selector: 'app-screen',
+  standalone: true,
+  imports: [CounterComponent],
   template: `
     <div>
       <h3>Angular Demo</h3>
-      <app-counter></app-counter>
+      <app-counter/>
     </div>
   `,
   styles: [],
 })
-export class ScreenComponent {
-  // DEMO:
-  // state = { count: 0, name: 'Jonas' };
-  // constructor() {
-  //   setInterval(() => {
-  //     this.state.count++;
-  //   }, 1000);
-  // }
-  // DEMO:
-  // state$ = interval(1000).pipe(
-  //   scan((acc) => acc + 1, 0),
-  //   startWith(0)
-  // );
-}
+export class ScreenComponent {}

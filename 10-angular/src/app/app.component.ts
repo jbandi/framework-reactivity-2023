@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { ScreenComponent } from './screen/screen.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [ScreenComponent],
   template: `
-    <!--The content below is only a placeholder and can be replaced.-->
     <div style="text-align:center" class="content">
-      <app-screen></app-screen>
+      <app-screen/>
     </div>
   `,
   styles: [],
