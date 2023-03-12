@@ -3,8 +3,6 @@ import { ScreenComponent } from './screen/screen.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [ScreenComponent],
   template: `
     <div style="text-align:center" class="content">
       <app-screen/>
