@@ -5,7 +5,7 @@ const state = reactive({
 });
 
 watchEffect(() => {
-  document.body.innerHTML = `count is ${state.count}`;
+  document.body.innerHTML = `<h1>Count is ${state.count}</h1>`;
 });
 
 function main() {
