@@ -374,6 +374,29 @@ function increment() {
 
 
 
+#### Fine Grained Reactivits: There is no render-cascade!
+
+Add a count-message to the `Counter.vue`
+
+```typescript
+<h4>{{ getCountMessage() }}</h4>
+///
+function getCountMessage() {
+  console.log("Rendering Count Message", count.value);
+  return "Count is " + count.value;
+}	
+```
+
+Add several `<counter/>` to `Screen`.
+
+=> Only the function of on componet is called when incrementing.
+
+=> When changing the state of `Screen` then the function is not called.
+
+
+
+#### Dependency Tracking
+
 Demonstrate Fine-Grained Reactivity: Introduce second state and `computed`
 ```vue
 <template>
@@ -433,6 +456,16 @@ setInterval(() => {
 
 
 
+ => Then go back to Counter-Component and use (from `./stateFactory`):
+
+```
+const { state, doubleCount } = createState();
+```
+
+
+
+
+
 ### Pitfall
 
 Destructuring of state.
@@ -466,7 +499,7 @@ function increment() {
     let state = 0;
 
     function increase() {
-        state++;
+        state = state + 1;
     }
 </script>
 <h2>{state}</h2>
