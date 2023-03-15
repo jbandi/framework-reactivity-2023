@@ -1,8 +1,9 @@
 # Preparation
 
-Excel Demo Sheet öffnen.
+- Excel Demo Sheet öffnen.
+- https://voxxeddays.com/zurich/
+- https://2022.stateofjs.com/en-US/libraries/front-end-frameworks/
 
-- https://baselone.ch/one#Conference
 - https://svelte.dev/repl/
 - https://svelte.dev/tutorial/basics
 - https://www.typescriptlang.org/play
@@ -374,7 +375,7 @@ function increment() {
 
 
 
-#### Fine Grained Reactivits: There is no render-cascade!
+#### Fine Grained Reactivity: There is no render-cascade!
 
 Add a count-message to the `Counter.vue`
 
@@ -519,7 +520,7 @@ Show generated code in network tab!
     let state = {counter: {num: 0}};
 
     function increase() {
-        state.counter.num++;
+        state.counter.num = state.counter.num + 1;;
     }
 </script>
 <h2>{state.counter.num}</h2>
@@ -538,7 +539,7 @@ Show generated code in network tab!
 
     function increase() {
         let counter = state.counter;
-        counter.num++;
+        counter.num = counter.num + 1;
     }
 </script>
 <h2>{state.counter.num}</h2>

@@ -10,6 +10,7 @@ https://github.com/jbandi/framework-reactivity-2022/blob/main/00-talk/Reacitvity
 
 I held an initial version of this talk at "Bärner JS" in 2019.
 
-I presented an extended version at "BaselOne 2022" (https://2022.baselone.ch/one).  
-The final source code from the live-coding examples from the talk is here:   
-https://github.com/jbandi/framework-reactivity-2022/tree/basel-one-final-demos
+I presented an extended version of the talk at 
+
+- "BaselOne 2022" (https://2022.baselone.ch/one).  
+- "Voxxed Days Zürich" 2023" (https://voxxeddays.com/zurich/).
