@@ -8,7 +8,6 @@ import { CounterComponent } from '../counter/counter.component';
   template: `
     <h3>{{title}}</h3>
     <app-counter/>
-    <app-counter/>
   `,
   styles: [],
 })
