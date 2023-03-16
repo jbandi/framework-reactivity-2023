@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ title }}</h1>
+  <h3>{{ title }}</h3>
   <!--  <input v-model="title" />-->
   <Counter />
 </template>

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ScreenComponent } from './screen/screen.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +10,7 @@ import { ScreenComponent } from './screen/screen.component';
   styles: [],
 })
 export class AppComponent {
-  private _title = 'demo';
+  private _title = 'Angular App';
 
   get title(): string {
     console.log('App - get title');
